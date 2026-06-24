@@ -1,40 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Happy Birthday Lei ❤️</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Lei ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Happy Birthday Lei 🎂</h1>
 
-    <div class="cake">
-      <div class="candles">
-        <div class="candle">
-          <div class="flame" id="flame1"></div>
-        </div>
-        <div class="candle">
-          <div class="flame" id="flame2"></div>
-        </div>
-        <div class="candle">
-          <div class="flame" id="flame3"></div>
-        </div>
+<div id="balloons"></div>
+
+<section id="welcome" class="section">
+  <h1>✨ Happy Birthday Lei ✨</h1>
+
+  <p class="subtitle">
+    Today is all about you.
+  </p>
+
+  <button id="startBtn">
+    Tap To Begin ❤️
+  </button>
+
+  <audio id="music" loop>
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+</section>
+
+<section id="cakeSection" class="section hidden">
+
+  <h2>🎂 Make A Wish 🎂</h2>
+
+  <p>Blow into your microphone to extinguish the candles.</p>
+
+  <div class="cake">
+
+    <div class="candles">
+
+      <div class="candle">
+        <div class="flame"></div>
       </div>
+
+      <div class="candle">
+        <div class="flame"></div>
+      </div>
+
+      <div class="candle">
+        <div class="flame"></div>
+      </div>
+
+      <div class="candle">
+        <div class="flame"></div>
+      </div>
+
+      <div class="candle">
+        <div class="flame"></div>
+      </div>
+
     </div>
 
-    <p>Blow into your microphone to extinguish the candles ✨</p>
-
-    <div id="message" class="hidden">
-      <h2>🎉 Surprise! 🎉</h2>
-      <p>
-        Happy Birthday, Lei! ❤️<br>
-        Thank you for being such an amazing friend.
-        Wishing you happiness, laughter, and all the things you love today and always.
-      </p>
-    </div>
   </div>
 
-  <script src="script.js"></script>
+</section>
+
+<section id="letterSection" class="section hidden">
+
+  <h2>💌 A Letter For You</h2>
+
+  <div class="letter">
+    <p id="typedText"></p>
+  </div>
+
+</section>
+
+<section id="gallerySection" class="section hidden">
+
+  <h2>📸 Our Memories</h2>
+
+  <div class="gallery">
+
+    <div class="photo">
+      <img src="assets/photo1.jpg">
+      <span>One of my favorite memories ❤️</span>
+    </div>
+
+    <div class="photo">
+      <img src="assets/photo2.jpg">
+      <span>A day I'll always remember ✨</span>
+    </div>
+
+    <div class="photo">
+      <img src="assets/photo3.jpg">
+      <span>The laughs were worth it 😂</span>
+    </div>
+
+    <div class="photo">
+      <img src="assets/photo4.jpg">
+      <span>Looking forward to more memories 🌸</span>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="endingSection" class="section hidden">
+
+  <div class="moon">🌙</div>
+
+  <h2>Happy Birthday Lei</h2>
+
+  <p class="ending">
+    No matter how much time passes,<br>
+    I hope you never forget how loved,<br>
+    appreciated, and important you are.
+  </p>
+
+  <p>❤️</p>
+
+  <p>— From your best friend</p>
+
+  <button id="secretBtn">
+    P.S. Click Me
+  </button>
+
+  <div id="secretMessage" class="hidden">
+    I am really lucky to have met you ❤️
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+
 </body>
 </html>
